@@ -2,9 +2,20 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      Hompage
-    </div>
+    <>
+      <header>
+        Home page
+      </header>
+      <nav>
+
+      </nav>
+      <main>
+
+      </main>
+      <footer>
+
+      </footer>
+    </>
   );
 }
 
