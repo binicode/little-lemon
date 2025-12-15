@@ -1,6 +1,6 @@
 import Header from "../header/Header";
 import Nav from "../nav/Nav";
-import Main from "../main/Main";
+import Main from "../../main/Main";
 import Footer from "../footer/Footer";
 
 function Layout() {
@@ -8,7 +8,7 @@ function Layout() {
         <div className="layout">
             <Header />
             <Nav />
-            <Main />
+            <Main className="main" />
             <Footer />
         </div>
     )
