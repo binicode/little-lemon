@@ -1,31 +1,31 @@
 header {
-  display: flex;               /* activate flexbox */
+  display: flex; /* activate flexbox */
   justify-content: space-between; /* logo on left, nav on right */
-  align-items: center;         /* vertically center items */
-  padding: 1rem 2rem;          /* spacing around header */
-  background-color: #f8f8f8;   /* optional background */
+  align-items: center; /* vertically center items */
+  padding: 1rem 4rem; /* spacing around header */
+  background-color: #f8f8f8; /* optional background */
   border-bottom: 1px solid #ddd; /* subtle divider */
 }
 
 header img {
-  height: 50px;                /* control logo size */
-  width: auto;                 /* keep aspect ratio */
+  height: 50px; /* control logo size */
+  width: auto; /* keep aspect ratio */
 }
 
 header nav ul {
-  display: flex;               /* make nav links horizontal */
-  list-style: none;            /* remove bullets */
-  gap: 1.5rem;                 /* spacing between links */
+  display: flex; /* make nav links horizontal */
+  list-style: none; /* remove bullets */
+  gap: 1.5rem; /* spacing between links */
   margin: 0;
   padding: 0;
 }
 
 header nav a {
-  text-decoration: none;       /* remove underline */
-  color: #333;                 /* link color */
+  text-decoration: none; /* remove underline */
+  color: #333; /* link color */
   font-weight: 500;
 }
 
 header nav a:hover {
-  color: #0077cc;              /* hover effect */
+  color: #0077cc; /* hover effect */
 }

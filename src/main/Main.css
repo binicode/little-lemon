@@ -22,3 +22,71 @@
   background: #e3f2fd;
   padding: 2rem;
 }
+
+/*hero-section*/
+.hero {
+  background: #fdf4e3; /* full-width background */
+}
+
+.hero-content {
+  padding: 1rem 4rem;
+  display: flex; /* side-by-side layout */
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* center content */
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* stack h1, h2, p, button vertically */
+  align-items: flex-start; /* left-align text elements */
+}
+
+.hero-text h1,
+.hero-text h2,
+.hero-text p {
+  text-align: left; /* ensure text stays left-aligned */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 400px; /* limit text width */
+}
+
+.reserve-btn {
+  align-self: center;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reserve-btn:hover {
+  background: #005fa3;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px; /* control image size */
+  border-radius: 8px; /* optional styling */
+}
