@@ -5,7 +5,7 @@
 .hero {
   background: #fdf4e3;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 12rem;
 }
 
 .specials {
@@ -29,13 +29,12 @@
 }
 
 .hero-content {
-  padding: 1rem 4rem;
   display: flex; /* side-by-side layout */
   justify-content: space-between;
   align-items: center;
   max-width: 1200px; /* center content */
   margin: 0 auto;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .hero-text {
