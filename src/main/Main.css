@@ -107,3 +107,16 @@
   height: 300px;
   width: 400px;
 }
+
+/*testimonials section*/
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.testimonials-title {
+  text-align: center;   /* centers the text */
+  padding: 1rem 0;      /* adds vertical padding */
+  font-size: 1.75rem;   /* makes the title stand out */
+}
