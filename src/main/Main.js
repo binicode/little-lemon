@@ -3,6 +3,9 @@ import Hero from "../assets/hero.jpg";
 import Bruchetta from "../assets/bruchetta.svg";
 import GreekSalad from "../assets/greek salad.jpg";
 import LemonDessert from "../assets/lemon dessert.jpg";
+import John from "../assets/john.jpeg";
+import MarioAdrianA from "../assets/Mario and Adrian a.jpg";
+import MarioAdrianB from "../assets/Mario and Adrian b.jpg";
 
 function Main({ className }) {
   return (
@@ -80,7 +83,7 @@ function Main({ className }) {
 
             {/* Image in the middle */}
             <div className="testimonial-image">
-              <img src="john.jpg" alt="Photo of John" />
+              <img src={John} alt="protrait of John" />
             </div>
 
             {/* Name on the right */}
@@ -96,7 +99,7 @@ function Main({ className }) {
           <article className="testimonial-card">
             <div className="testimonial-rating">⭐⭐⭐⭐</div>
             <div className="testimonial-image">
-              <img src="john.jpg" alt="Photo of John" />
+              <img src={John} alt="protrait of John" />
             </div>
             <div className="testimonial-name">John</div>
             <p className="testimonial-comment">
@@ -107,7 +110,7 @@ function Main({ className }) {
           <article className="testimonial-card">
             <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
             <div className="testimonial-image">
-              <img src="john.jpg" alt="Photo of John" />
+              <img src={John} alt="protrait of John" />
             </div>
             <div className="testimonial-name">John</div>
             <p className="testimonial-comment">
@@ -118,7 +121,7 @@ function Main({ className }) {
           <article className="testimonial-card">
             <div className="testimonial-rating">⭐⭐⭐</div>
             <div className="testimonial-image">
-              <img src="john.jpg" alt="Photo of John" />
+              <img src={John} alt="protrait of John" />
             </div>
             <div className="testimonial-name">John</div>
             <p className="testimonial-comment">"Final testimonial comment."</p>
@@ -126,7 +129,36 @@ function Main({ className }) {
         </div>
       </section>
 
-      <section className="about-Chicago-branch"></section>
+      <section className="chicago-branch">
+        <div className="container">
+          <div className="chicago-grid">
+            {/* Left column: text content */}
+            <div className="chicago-text">
+              <h2 className="branch-title">Little Lemon</h2>
+              <h3 className="branch-subtitle">Chicago</h3>
+              <p className="branch-description">
+                Welcome to our Chicago branch! We bring authentic Mediterranean
+                flavors with a modern twist. Enjoy fresh ingredients, cozy
+                atmosphere, and exceptional service right in the heart of the
+                city.
+              </p>
+            </div>
+
+            {/* Right column: overlapping images */}
+            <div className="chicago-images">
+              <img
+                src={MarioAdrianA}
+                alt="Little Lemon Chicago interior"
+                className="image image-top"
+              />
+              <img
+                src={MarioAdrianB} alt="Little Lemon Chicago dish"
+                className="image image-bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

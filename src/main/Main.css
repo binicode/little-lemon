@@ -120,3 +120,38 @@
   padding: 1rem 0;      /* adds vertical padding */
   font-size: 1.75rem;   /* makes the title stand out */
 }
+
+.testimonial-image {
+  width: 50px;
+  border-radius: 25px;
+}
+
+/*about Chicago branch*/
+.chicago-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.chicago-images {
+  position: relative;
+  width: fit-content;
+}
+
+.chicago-images .image {
+  width: 200px;
+  position: absolute;
+}
+
+.image-top {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.image-bottom {
+  top: 20px;
+  left: 40px;
+  z-index: 1;
+}
