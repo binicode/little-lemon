@@ -89,3 +89,21 @@
   max-width: 500px; /* control image size */
   border-radius: 8px; /* optional styling */
 }
+
+/*specials section*/
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specials-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card img {
+  height: 300px;
+  width: 400px;
+}
