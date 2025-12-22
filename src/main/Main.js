@@ -7,9 +7,9 @@ import John from "../assets/john.jpeg";
 import MarioAdrianA from "../assets/Mario and Adrian a.jpg";
 import MarioAdrianB from "../assets/Mario and Adrian b.jpg";
 
-function Main({ className }) {
+function Main() {
   return (
-    <main className={className}>
+    <main className="main">
       <section className="hero">
         <div className="hero-content">
           <div className="hero-text">
@@ -30,102 +30,107 @@ function Main({ className }) {
       </section>
 
       <section className="specials">
-        {/* First row: Title on the left, Button on the right*/}
-        <div className="specials-header">
-          <h2 className="specials-title">Specials</h2>
-          <button className="menu-button">Online menu</button>
-        </div>
+        <div className="specials-content">
+          {/* First row: Title on the left, Button on the right*/}
+          <div className="specials-header">
+            <h2 className="specials-title">Specials</h2>
+            <button className="menu-button">Online menu</button>
+          </div>
 
-        {/*Second row: Three cards*/}
-        <div className="specials-cards">
-          <article className="card">
-            <img src={GreekSalad} alt="Special dish 1" />
-            <div>
-              <h3 className="card-title">Greek Salad</h3>
-              <p className="price">$12.99</p>
-            </div>
-            <p className="card-description">Short description of the dish.</p>
-            <h3 className="order-button">Order a Delivery</h3>
-          </article>
+          {/*Second row: Three cards*/}
+          <div className="specials-cards">
+            <article className="card">
+              <img src={GreekSalad} alt="Special dish 1" />
+              <div>
+                <h3 className="card-title">Greek Salad</h3>
+                <p className="price">$12.99</p>
+              </div>
+              <p className="card-description">Short description of the dish.</p>
+              <h3 className="order-button">Order a Delivery</h3>
+            </article>
 
-          <article className="card">
-            <img src={Bruchetta} alt="Special dish 2" />
-            <div>
-              <h3 className="card-title">Bruschetta</h3>
-              <p className="price">$5.99</p>
-            </div>
-            <p className="card-description">Short description of the dish.</p>
-            <h3 className="order-button">Order a Delivery</h3>
-          </article>
+            <article className="card">
+              <img src={Bruchetta} alt="Special dish 2" />
+              <div>
+                <h3 className="card-title">Bruschetta</h3>
+                <p className="price">$5.99</p>
+              </div>
+              <p className="card-description">Short description of the dish.</p>
+              <h3 className="order-button">Order a Delivery</h3>
+            </article>
 
-          <article className="card">
-            <img src={LemonDessert} alt="Special dish 3" />
-            <div>
-              <h3 className="card-title">Lemon Desert</h3>
-              <p className="price">$5.00</p>
-            </div>
-            <p className="card-description">Short description of the dish.</p>
-            <h3 className="order-button">Order a Delivery</h3>
-          </article>
+            <article className="card">
+              <img src={LemonDessert} alt="Special dish 3" />
+              <div>
+                <h3 className="card-title">Lemon Desert</h3>
+                <p className="price">$5.00</p>
+              </div>
+              <p className="card-description">Short description of the dish.</p>
+              <h3 className="order-button">Order a Delivery</h3>
+            </article>
+          </div>
         </div>
       </section>
 
       <section className="testimonials">
-        {/* Title centered */}
-        <h2 className="testimonials-title">Testimonials</h2>
+        <div className="testimonials-content">
+          {/* Title centered */}
+          <h2 className="testimonials-title">Testimonials</h2>
 
-        {/* Testimonials grid */}
-        <div className="testimonials-grid">
-          {/* Single testimonial card */}
-          <article className="testimonial-card">
-            {/* Rating at the top */}
-            <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
+          {/* Testimonials grid */}
+          <div className="testimonials-grid">
+            <article className="testimonial-card">
+              <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
 
-            {/* Image in the middle */}
-            <div className="testimonial-image">
-              <img src={John} alt="protrait of John" />
-            </div>
+              <div className="testimonial-person">
+                <div className="testimonial-image">
+                  <img src={John} alt="portrait of John" />
+                </div>
+                <div className="testimonial-name">John</div>
+              </div>
+              <p className="testimonial-comment">
+                "This is a sample testimonial comment from Jphn"
+              </p>
+            </article>
+            <article className="testimonial-card">
+              <div className="testimonial-rating">⭐⭐⭐⭐</div>
+              <div className="testimonial-person">
+                <div className="testimonial-image">
+                  <img src={John} alt="portrait of John" />
+                </div>
+                <div className="testimonial-name">John</div>
+              </div>
+              <p className="testimonial-comment">
+                "Another testimonial comment goes here."
+              </p>
+            </article>
 
-            {/* Name on the right */}
-            <div className="testimonial-name">John</div>
+            <article className="testimonial-card">
+              <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
+              <div className="testimonial-person">
+                <div className="testimonial-image">
+                  <img src={John} alt="portrait of John" />
+                </div>
+                <div className="testimonial-name">John</div>
+              </div>
+              <p className="testimonial-comment">
+                "Yet another testimonial comment."
+              </p>
+            </article>
 
-            {/* Comment at the bottom */}
-            <p className="testimonial-comment">
-              "This is a sample testimonial comment from Person One."
-            </p>
-          </article>
-
-          {/* Repeat for 4 cards */}
-          <article className="testimonial-card">
-            <div className="testimonial-rating">⭐⭐⭐⭐</div>
-            <div className="testimonial-image">
-              <img src={John} alt="protrait of John" />
-            </div>
-            <div className="testimonial-name">John</div>
-            <p className="testimonial-comment">
-              "Another testimonial comment goes here."
-            </p>
-          </article>
-
-          <article className="testimonial-card">
-            <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
-            <div className="testimonial-image">
-              <img src={John} alt="protrait of John" />
-            </div>
-            <div className="testimonial-name">John</div>
-            <p className="testimonial-comment">
-              "Yet another testimonial comment."
-            </p>
-          </article>
-
-          <article className="testimonial-card">
-            <div className="testimonial-rating">⭐⭐⭐</div>
-            <div className="testimonial-image">
-              <img src={John} alt="protrait of John" />
-            </div>
-            <div className="testimonial-name">John</div>
-            <p className="testimonial-comment">"Final testimonial comment."</p>
-          </article>
+            <article className="testimonial-card">
+              <div className="testimonial-rating">⭐⭐⭐</div>
+              <div className="testimonial-person">
+                <div className="testimonial-image">
+                  <img src={John} alt="portrait of John" />
+                </div>
+                <div className="testimonial-name">John</div>
+              </div>
+              <p className="testimonial-comment">
+                "Final testimonial comment."
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -149,11 +154,12 @@ function Main({ className }) {
               <img
                 src={MarioAdrianA}
                 alt="Little Lemon Chicago interior"
-                className="image image-top"
+                className="image-top"
               />
               <img
-                src={MarioAdrianB} alt="Little Lemon Chicago dish"
-                className="image image-bottom"
+                src={MarioAdrianB}
+                alt="Little Lemon Chicago dish"
+                className="image-bottom"
               />
             </div>
           </div>
