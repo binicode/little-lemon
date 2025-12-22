@@ -1,9 +1,6 @@
 .layout {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+    padding: 0 8%;
 }
 
-.main {
-    padding: 1.5rem;
-}
