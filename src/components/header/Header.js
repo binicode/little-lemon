@@ -1,10 +1,11 @@
+import Hamburger from "../icons/Hamburger";
 import Logo from "../../assets/Logo.svg";
 import "./Header.css";
 
 function Header() {
   return (
     <header className="header">
-      <img src={Logo} alt="Little Lemon logo" className="logo"/>
+      <img src={Logo} alt="Little Lemon logo" className="logo" />
       <nav className="nav">
         <ul>
           <li>
@@ -27,6 +28,9 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <Hamburger 
+        size={32}
+        />
     </header>
   );
 }
