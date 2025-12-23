@@ -1,15 +1,23 @@
-header {
-  display: flex; /* activate flexbox */
+.header {
+  display: flex;
   justify-content: space-between; /* logo on left, nav on right */
   align-items: center; /* vertically center items */
-  padding: 1rem 12rem; /* spacing around header */
+  padding: 1rem 5%; /* spacing around content */
   background-color: #f8f8f8; /* optional background */
   border-bottom: 1px solid #ddd; /* subtle divider */
+  gap: 1rem;
 }
 
-header img {
+.logo {
   height: 50px; /* control logo size */
   width: auto; /* keep aspect ratio */
+  flex-shrink: 1;
+  min-width: 20px;
+  max-width: 100%;
+}
+
+.nav {
+  flex-shrink: 0;
 }
 
 header nav ul {
