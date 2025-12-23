@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+/* index.css or App.css */
+
+/* 1. Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Karla:wght@400&display=swap');
+
+/* 2. Headline styles */
+h1, h2, h3 {
+  font-family: 'Markazi Text', serif;
+  font-weight: 500; /* Medium */
+  font-size: 32px;  /* Example headline size */
+  line-height: 32px; /* Same as point size */
+  text-transform: none; /* Keep sentence case */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 3. Paragraph styles */
+p {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 21px; /* 65% of 32px headline */
+  line-height: 1.5; /* Comfortable reading */
+  text-transform: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* 4. Responsive scaling */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 16px; /* 65% of 24px headline */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Card Title */
+.card-title {
+  font-weight: 500;                     /* Medium */
+  font-size: 18pt;                      /* Title size */
 }
 
-.App-link {
-  color: #61dafb;
+/* Card Paragraph */
+.card-description {
+  font-weight: 400;                     /* Regular */
+  font-size: 16pt;                      /* Paragraph size */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Card Price */
+.card-price {
+  font-weight: 500;                     /* Medium */
+  font-size: 16pt;                      /* Same as paragraph size */
 }
+

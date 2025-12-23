@@ -43,7 +43,7 @@ function Main() {
               <img src={GreekSalad} alt="Special dish 1" />
               <div>
                 <h3 className="card-title">Greek Salad</h3>
-                <p className="price">$12.99</p>
+                <p className="card-price">$12.99</p>
               </div>
               <p className="card-description">Short description of the dish.</p>
               <h3 className="order-button">Order a Delivery</h3>
@@ -53,7 +53,7 @@ function Main() {
               <img src={Bruchetta} alt="Special dish 2" />
               <div>
                 <h3 className="card-title">Bruschetta</h3>
-                <p className="price">$5.99</p>
+                <p className="card-price">$5.99</p>
               </div>
               <p className="card-description">Short description of the dish.</p>
               <h3 className="order-button">Order a Delivery</h3>
@@ -63,7 +63,7 @@ function Main() {
               <img src={LemonDessert} alt="Special dish 3" />
               <div>
                 <h3 className="card-title">Lemon Desert</h3>
-                <p className="price">$5.00</p>
+                <p className="card-price">$5.00</p>
               </div>
               <p className="card-description">Short description of the dish.</p>
               <h3 className="order-button">Order a Delivery</h3>
