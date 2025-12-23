@@ -4,7 +4,7 @@
 
 /*hero-section*/
 .hero {
-  background: #e5e4e2;
+  background: #495E57;
 }
 .hero-content {
   padding: 1rem 5%; /* spacing around content */
@@ -30,35 +30,38 @@
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 0;
+  color: #F4CE14;
 }
 
 .hero-text h2 {
   font-size: 1.5rem;
-  color: #555;
+  color: white;
   margin-bottom: 1rem;
   margin-top: 0;
 }
 
 .hero-text p {
   font-size: 1.1rem;
+  color: white;
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.5;
   max-width: 500px; /* limit text width */
 }
 
 .reserve-btn {
   align-self: center;
-  background: #0077cc;
-  color: #fff;
+  background: #F4CE14;
+  color: #333333;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 16px;
   cursor: pointer;
 }
 
 .reserve-btn:hover {
-  background: #005fa3;
+  background: #333333;
+  color: #e5e4e2;
 }
 
 .hero-image {
@@ -68,7 +71,7 @@
 .hero-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* optional styling */
+  border-radius: 16px; /* optional styling */
 }
 
 /*specials section*/
