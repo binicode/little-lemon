@@ -3,7 +3,7 @@
   justify-content: space-between; /* logo on left, nav on right */
   align-items: center; /* vertically center items */
   padding: 1rem 5%; /* spacing around content */
-  background-color: #EDEFEE; /* optional background */
+  background-color: #white; /* optional background */
   border-bottom: 1px solid #ddd; /* subtle divider */
   gap: 1rem;
 }
