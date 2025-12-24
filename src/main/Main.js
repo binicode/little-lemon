@@ -3,7 +3,10 @@ import Hero from "../assets/hero.jpg";
 import Bruchetta from "../assets/bruchetta.svg";
 import GreekSalad from "../assets/greek salad.jpg";
 import LemonDessert from "../assets/lemon dessert.jpg";
-import John from "../assets/john.jpeg";
+import John from "../assets/John.webp";
+import Hannah from "../assets/Hannah.webp";
+import Michael from "../assets/Michael.webp";
+import Darius from "../assets/Darius.webp";
 import MarioAdrianA from "../assets/Mario and Adrian a.jpg";
 import MarioAdrianB from "../assets/Mario and Adrian b.jpg";
 
@@ -94,22 +97,24 @@ function Main() {
                 <div className="testimonial-image">
                   <img src={John} alt="portrait of John" />
                 </div>
-                <div className="testimonial-name">John</div>
+                <div className="testimonial-name">John Davis</div>
               </div>
               <p className="testimonial-comment">
-                "This is a sample testimonial comment from Jphn"
+                “Little Lemon always delivers fresh flavors and warm hospitality
+                — my go‑to spot in Chicago!”
               </p>
             </article>
             <article className="testimonial-card">
               <div className="testimonial-rating">⭐⭐⭐⭐</div>
               <div className="testimonial-person">
                 <div className="testimonial-image">
-                  <img src={John} alt="portrait of John" />
+                  <img src={Michael} alt="portrait of John" />
                 </div>
-                <div className="testimonial-name">John</div>
+                <div className="testimonial-name">Michael Thompson</div>
               </div>
               <p className="testimonial-comment">
-                "Another testimonial comment goes here."
+                “The specials are crafted with care. The Greek Salad is
+                refreshing and perfectly balanced.”
               </p>
             </article>
 
@@ -117,12 +122,13 @@ function Main() {
               <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
               <div className="testimonial-person">
                 <div className="testimonial-image">
-                  <img src={John} alt="portrait of John" />
+                  <img src={Hannah} alt="portrait of John" />
                 </div>
-                <div className="testimonial-name">John</div>
+                <div className="testimonial-name">Hannah</div>
               </div>
               <p className="testimonial-comment">
-                "Yet another testimonial comment."
+                “Bruschetta here is unbeatable — crisp, flavorful, and
+                beautifully presented every time.”
               </p>
             </article>
 
@@ -130,12 +136,13 @@ function Main() {
               <div className="testimonial-rating">⭐⭐⭐</div>
               <div className="testimonial-person">
                 <div className="testimonial-image">
-                  <img src={John} alt="portrait of John" />
+                  <img src={Darius} alt="portrait of John" />
                 </div>
-                <div className="testimonial-name">John</div>
+                <div className="testimonial-name">Darius Johnson</div>
               </div>
               <p className="testimonial-comment">
-                "Final testimonial comment."
+                “The Lemon Dessert is a bright, zesty finish that keeps me
+                coming back again and again.”
               </p>
             </article>
           </div>
