@@ -65,7 +65,7 @@
 }
 
 .hero-image {
-  width: 50%;
+  width: 70%;
 }
 
 .hero-image img {
@@ -76,7 +76,7 @@
 
 /*specials section*/
 .specials {
-  background: #a4ceb7;
+  background: #FFFFFF;
 }
 
 .specials-content {
@@ -90,15 +90,86 @@
   align-items: center;
 }
 
+.specials .menu-button {
+  align-self: center;
+  background: #EDEFEE;
+  color: #333333;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 0,75rem;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.specials .menu-button:hover {
+  background: #333333;
+  color: #e5e4e2;
+}
+
 .specials-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
+.card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  border: solid;
+  border-color: #495E57;
+  border-radius: 16px;
+}
+
 .card img {
-  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover; 
   width: 100%;
+  border-radius: 16px;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.75rem;
+}
+
+.card-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.card-price {
+  font-size: 0.67rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #EE9972;
+}
+
+.card-description {
+  font-size: 0.67rem;
+  margin: 0 0.75rem;
+  max-width: 65ch; /* limit width to ~65 characters */ 
+  overflow: hidden; /* hide overflow */ 
+  text-overflow: ellipsis; /* add "..." at the end */ 
+}
+
+.specials .order-button {
+  align-self: center;
+  background: #EDEFEE;
+  color: #333333;
+  border: none;
+  padding: 0.75rem 0;
+  margin: 0.75em;
+  font-weight: 500;
+  font-size: 0.75rem;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.specials .order-button:hover {
+  background-color: #333333;
+  color: #EDEFEE;
 }
 
 /*testimonials section*/

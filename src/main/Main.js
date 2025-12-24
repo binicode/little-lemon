@@ -41,32 +41,41 @@ function Main() {
           <div className="specials-cards">
             <article className="card">
               <img src={GreekSalad} alt="Special dish 1" />
-              <div>
+              <div className="title-price">
                 <h3 className="card-title">Greek Salad</h3>
                 <p className="card-price">$12.99</p>
               </div>
-              <p className="card-description">Short description of the dish.</p>
-              <h3 className="order-button">Order a Delivery</h3>
+              <p className="card-description">
+                Crisp lettuce, cucumbers, tomatoes, and olives topped with feta
+                for a refreshing Mediterranean classic.
+              </p>
+              <button className="order-button">Order a Delivery</button>
             </article>
 
             <article className="card">
               <img src={Bruchetta} alt="Special dish 2" />
-              <div>
+              <div className="title-price">
                 <h3 className="card-title">Bruschetta</h3>
                 <p className="card-price">$5.99</p>
               </div>
-              <p className="card-description">Short description of the dish.</p>
-              <h3 className="order-button">Order a Delivery</h3>
+              <p className="card-description">
+                Toasted bread layered with ripe tomatoes, garlic, and basil,
+                drizzled with olive oil.
+              </p>
+              <button className="order-button">Order a Delivery</button>
             </article>
 
             <article className="card">
               <img src={LemonDessert} alt="Special dish 3" />
-              <div>
+              <div className="title-price">
                 <h3 className="card-title">Lemon Desert</h3>
                 <p className="card-price">$5.00</p>
               </div>
-              <p className="card-description">Short description of the dish.</p>
-              <h3 className="order-button">Order a Delivery</h3>
+              <p className="card-description">
+                A zesty, sweet treat with bright citrus flavor and a smooth,
+                creamy finish.
+              </p>
+              <button className="order-button">Order a Delivery</button>
             </article>
           </div>
         </div>
@@ -76,7 +85,6 @@ function Main() {
         <div className="testimonials-content">
           {/* Title centered */}
           <h2 className="testimonials-title">Testimonials</h2>
-
           {/* Testimonials grid */}
           <div className="testimonials-grid">
             <article className="testimonial-card">

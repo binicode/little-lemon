@@ -18,7 +18,6 @@ p {
   font-weight: 400; /* Regular */
   font-size: 21px; /* 65% of 32px headline */
   line-height: 1.5; /* Comfortable reading */
-  text-transform: none;
 }
 
 /* 4. Responsive scaling */
@@ -32,21 +31,5 @@ p {
   }
 }
 
-/* Card Title */
-.card-title {
-  font-weight: 500;                     /* Medium */
-  font-size: 18pt;                      /* Title size */
-}
 
-/* Card Paragraph */
-.card-description {
-  font-weight: 400;                     /* Regular */
-  font-size: 16pt;                      /* Paragraph size */
-}
-
-/* Card Price */
-.card-price {
-  font-weight: 500;                     /* Medium */
-  font-size: 16pt;                      /* Same as paragraph size */
-}
 
