@@ -81,7 +81,7 @@
 
 .specials-content {
   display: grid;
-  padding: 1rem 5%; /* spacing around content */
+  padding: 1rem 15%; /* spacing around content */
 }
 
 .specials-header {
@@ -147,8 +147,9 @@
 }
 
 .card-description, .testimonial-comment {
+  align-self: flex-end;
   font-size: 0.67rem;
-  margin: 0 0.75rem;
+  margin: 2rem 0.75rem;
   max-width: 65ch; /* limit width to ~65 characters */ 
   overflow: hidden; /* hide overflow */ 
   text-overflow: ellipsis; /* add "..." at the end */ 
@@ -180,7 +181,7 @@
 
 .testimonials-content {
   display: grid;
-  padding: 1rem 5%; /* spacing around content */
+  padding: 1rem 15%; /* spacing around content */
 }
 
 .testimonials-grid {
@@ -222,7 +223,30 @@
 
 /*about Chicago branch*/
 .chicago-branch {
-  background: #a4ceb7;
+  background: #FFFFFF;
+}
+
+.chicago-text {
+  display: grid;
+}
+
+.chicago-branch .branch-title {
+  color: #495E57;
+  margin: 0;
+}
+
+.chicago-branch .branch-subtitle {
+  font-size: 1.67rem;
+  color: #F4CE14;
+  margin: 0;
+}
+
+.chicago-branch .branch-description {
+  font-size: 1rem;
+  margin: 0 0.75rem;
+  max-width: 65ch; /* limit width to ~65 characters */ 
+  overflow: hidden; /* hide overflow */ 
+  text-overflow: ellipsis; /* add "..." at the end */ 
 }
 
 .container {

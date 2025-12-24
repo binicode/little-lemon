@@ -7,8 +7,8 @@ import John from "../assets/John.webp";
 import Hannah from "../assets/Hannah.webp";
 import Michael from "../assets/Michael.webp";
 import Darius from "../assets/Darius.webp";
-import MarioAdrianA from "../assets/Mario and Adrian a.jpg";
-import MarioAdrianB from "../assets/Mario and Adrian b.jpg";
+import MarioAdrianA from "../assets/Mario and Adrian a.webp";
+import MarioAdrianB from "../assets/Mario and Adrian b.webp";
 
 function Main() {
   return (
@@ -108,7 +108,7 @@ function Main() {
               <div className="testimonial-rating">⭐⭐⭐⭐</div>
               <div className="testimonial-person">
                 <div className="testimonial-image">
-                  <img src={Michael} alt="portrait of John" />
+                  <img src={Michael} alt="portrait of Michael" />
                 </div>
                 <div className="testimonial-name">Michael Thompson</div>
               </div>
@@ -122,7 +122,7 @@ function Main() {
               <div className="testimonial-rating">⭐⭐⭐⭐⭐</div>
               <div className="testimonial-person">
                 <div className="testimonial-image">
-                  <img src={Hannah} alt="portrait of John" />
+                  <img src={Hannah} alt="portrait of Hannah" />
                 </div>
                 <div className="testimonial-name">Hannah</div>
               </div>
@@ -136,7 +136,7 @@ function Main() {
               <div className="testimonial-rating">⭐⭐⭐</div>
               <div className="testimonial-person">
                 <div className="testimonial-image">
-                  <img src={Darius} alt="portrait of John" />
+                  <img src={Darius} alt="portrait of Darius" />
                 </div>
                 <div className="testimonial-name">Darius Johnson</div>
               </div>
