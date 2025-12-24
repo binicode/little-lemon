@@ -149,8 +149,11 @@
 .card-description, .testimonial-comment {
   align-self: flex-end;
   font-size: 0.67rem;
-  margin: 2rem 0.75rem;
+  margin: 0.67rem;
   max-width: 65ch; /* limit width to ~65 characters */ 
+  display: -webkit-box;        /* enables flexbox-like layout for text */
+  -webkit-line-clamp: 3;       /* number of lines to show */
+  -webkit-box-orient: vertical;
   overflow: hidden; /* hide overflow */ 
   text-overflow: ellipsis; /* add "..." at the end */ 
 }
