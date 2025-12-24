@@ -153,6 +153,7 @@
   max-width: 65ch; /* limit width to ~65 characters */ 
   display: -webkit-box;        /* enables flexbox-like layout for text */
   -webkit-line-clamp: 3;       /* number of lines to show */
+  line-clamp: 3; /* standard property for compatibility */
   -webkit-box-orient: vertical;
   overflow: hidden; /* hide overflow */ 
   text-overflow: ellipsis; /* add "..." at the end */ 
