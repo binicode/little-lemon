@@ -10,12 +10,17 @@
   gap: 2rem;
 }
 
+.footer-logo {
+  width: 10%;
+  margin: 1rem;
+}
+
 .footer-logo img {
-  max-width: 120px;
+  width: 100px;
 }
 
 .footer-column {
-    max-width: 200px;
+    width: 50%;
 }
 
 .footer-column p {
