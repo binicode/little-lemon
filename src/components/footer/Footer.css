@@ -27,7 +27,7 @@
     align-self: flex-end;
     font-size: 0.67rem;
     margin: 2rem 0.75rem;
-    max-width: 65ch; /* limit width to ~65 characters */ 
+    max-width: 15ch; /* limit width to ~65 characters */ 
     overflow: hidden; /* hide overflow */ 
     text-overflow: ellipsis; /* add "..." at the end */ 
 }
