@@ -1,4 +1,7 @@
-/* index.css or App.css */
+.app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
 
 /* 1. Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Karla:wght@400&display=swap');
