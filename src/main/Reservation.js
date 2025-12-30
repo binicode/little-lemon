@@ -22,7 +22,7 @@ function Reservation() {
             </div>
           </div>
 
-          <div className="reservation-form">
+          <div className="reservation-right">
             <Outlet />
           </div>
         </div>
