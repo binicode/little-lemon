@@ -12,25 +12,23 @@ function Header() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="/">About</a>
           </li>
           <li>
-            <a href="#">Menu</a>
+            <a href="/">Menu</a>
           </li>
           <li>
-            <a href="#">Reservations</a>
+            <a href="/reservation">Reservations</a>
           </li>
           <li>
-            <a href="#">Order online</a>
+            <a href="/">Order online</a>
           </li>
           <li>
-            <a href="#">Login</a>
+            <a href="/">Login</a>
           </li>
         </ul>
       </nav>
-      <Hamburger 
-        size={32}
-        />
+      <Hamburger size={32} />
     </header>
   );
 }
