@@ -3,7 +3,7 @@
   justify-content: space-between; /* logo on left, nav on right */
   align-items: center; /* vertically center items */
   padding: 1rem 5%; /* spacing around content */
-  background-color: #FFFFFF; /* optional background */
+  background-color: #ffffff; /* optional background */
   border-bottom: 1px solid #ddd; /* subtle divider */
   gap: 1rem;
 }
@@ -30,7 +30,7 @@ header nav ul {
 
 header nav a {
   text-decoration: none; /* remove underline */
-  color: #495E57; /* link color */
+  color: #495e57; /* link color */
   font-weight: 500;
 }
 
@@ -44,7 +44,7 @@ header nav a:hover {
   background: none;
   border: none;
   cursor: pointer;
-  color: #495E57;
+  color: #495e57;
 }
 
 @media (max-width: 768px) {

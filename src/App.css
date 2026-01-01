@@ -1,24 +1,27 @@
 .app {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+  display: grid;
+  min-height: 100vh;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* 1. Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Karla:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Karla:wght@400&display=swap");
 
 /* 2. Headline styles */
-h1, h2, h3 {
-  font-family: 'Markazi Text', serif;
+h1,
+h2,
+h3 {
+  font-family: "Markazi Text", serif;
   font-weight: 500; /* Medium */
-  font-size: 32px;  /* Example headline size */
+  font-size: 32px; /* Example headline size */
   line-height: 32px; /* Same as point size */
   text-transform: none; /* Keep sentence case */
 }
 
 /* 3. Paragraph styles */
 p {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-weight: 400; /* Regular */
   font-size: 21px; /* 65% of 32px headline */
   line-height: 1.5; /* Comfortable reading */
@@ -26,7 +29,9 @@ p {
 
 /* 4. Responsive scaling */
 @media (max-width: 768px) {
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-size: 24px;
     line-height: 24px;
   }
@@ -34,6 +39,3 @@ p {
     font-size: 16px; /* 65% of 24px headline */
   }
 }
-
-
-

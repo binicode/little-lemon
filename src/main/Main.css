@@ -4,7 +4,7 @@
 
 /*hero-section*/
 .hero {
-  background: #495E57;
+  background: #495e57;
 }
 .hero-content {
   padding: 1rem 5%; /* spacing around content */
@@ -30,7 +30,7 @@
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 0;
-  color: #F4CE14;
+  color: #f4ce14;
 }
 
 .hero-text h2 {
@@ -50,7 +50,7 @@
 
 .reserve-btn {
   align-self: center;
-  background: #F4CE14;
+  background: #f4ce14;
   color: #333333;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -76,7 +76,7 @@
 
 /*specials section*/
 .specials {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .specials-content {
@@ -92,11 +92,11 @@
 
 .specials .menu-button {
   align-self: center;
-  background: #EDEFEE;
+  background: #edefee;
   color: #333333;
   border: none;
   padding: 0.5rem 0.75rem;
-  font-size: 0,75rem;
+  font-size: 0, 75rem;
   border-radius: 16px;
   cursor: pointer;
 }
@@ -116,13 +116,13 @@
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   border: solid;
-  border-color: #495E57;
+  border-color: #495e57;
   border-radius: 16px;
 }
 
 .card img {
   aspect-ratio: 4 / 3;
-  object-fit: cover; 
+  object-fit: cover;
   width: 100%;
   border-radius: 16px;
 }
@@ -134,7 +134,8 @@
   margin: 0 0.75rem;
 }
 
-.card-title, .testimonial-name {
+.card-title,
+.testimonial-name {
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -143,25 +144,26 @@
   font-size: 0.67rem;
   font-weight: 500;
   text-decoration: underline;
-  color: #EE9972;
+  color: #ee9972;
 }
 
-.card-description, .testimonial-comment {
+.card-description,
+.testimonial-comment {
   align-self: flex-end;
   font-size: 0.67rem;
   margin: 0.67rem;
-  max-width: 65ch; /* limit width to ~65 characters */ 
-  display: -webkit-box;        /* enables flexbox-like layout for text */
-  -webkit-line-clamp: 3;       /* number of lines to show */
+  max-width: 65ch; /* limit width to ~65 characters */
+  display: -webkit-box; /* enables flexbox-like layout for text */
+  -webkit-line-clamp: 3; /* number of lines to show */
   line-clamp: 3; /* standard property for compatibility */
   -webkit-box-orient: vertical;
-  overflow: hidden; /* hide overflow */ 
-  text-overflow: ellipsis; /* add "..." at the end */ 
+  overflow: hidden; /* hide overflow */
+  text-overflow: ellipsis; /* add "..." at the end */
 }
 
 .specials .order-button {
   align-self: center;
-  background: #EDEFEE;
+  background: #edefee;
   color: #333333;
   border: none;
   padding: 0.75rem 0;
@@ -174,13 +176,13 @@
 
 .specials .order-button:hover {
   background-color: #333333;
-  color: #EDEFEE;
+  color: #edefee;
 }
 
 /*testimonials section*/
 .testimonials {
-  background: #495E57;
-  color: #FFFFFF;
+  background: #495e57;
+  color: #ffffff;
 }
 
 .testimonials-content {
@@ -235,7 +237,7 @@
 
 /*about Chicago branch*/
 .chicago-branch {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .chicago-text {
@@ -243,22 +245,22 @@
 }
 
 .chicago-branch .branch-title {
-  color: #495E57;
+  color: #495e57;
   margin: 0;
 }
 
 .chicago-branch .branch-subtitle {
   font-size: 1.67rem;
-  color: #F4CE14;
+  color: #f4ce14;
   margin: 0;
 }
 
 .chicago-branch .branch-description {
   font-size: 1rem;
   margin: 0 0.75rem;
-  max-width: 65ch; /* limit width to ~65 characters */ 
-  overflow: hidden; /* hide overflow */ 
-  text-overflow: ellipsis; /* add "..." at the end */ 
+  max-width: 65ch; /* limit width to ~65 characters */
+  overflow: hidden; /* hide overflow */
+  text-overflow: ellipsis; /* add "..." at the end */
 }
 
 .container {
@@ -292,5 +294,3 @@
   grid-column: 1 / 3;
   grid-row: 2 / 4;
 }
-
-

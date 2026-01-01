@@ -8,16 +8,18 @@
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   margin: 0 auto;
-  height: 100%;
 }
 
 @media (max-width: 768px) {
   .reservation-content {
     grid-template-columns: 1fr;
   }
+  .reservation-left {
+    margin-top: 2rem;
+  }
   .reservation-right {
     justify-self: center;
-    min-height: 500px;
+    margin-bottom: 1rem;
   }
 }
 

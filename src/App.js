@@ -18,7 +18,7 @@ function App() {
           <Route path="reservation" element={<Reservation />}>
             <Route path="paymentInfo" element={<PaymentInfo />} />
             <Route path="personalInfo" element={<PersonalInfo />} />
-            <Route path="reservationInfo" element={<ReservationInfo />} />
+            <Route path="" element={<ReservationInfo />} />
           </Route>
         </Routes>
       </BrowserRouter>
