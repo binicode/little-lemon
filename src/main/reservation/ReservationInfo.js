@@ -11,58 +11,66 @@ function ReservationInfo() {
       </div>
       <form className="reservation-form">
         {/* Date field */}
-        <label>
-          Date:
+        <div className="form-group">
+          <label for="date"></label>
+          Date
           <input
             type="date"
             name="date"
+            id="date"
             placeholder="Select a date"
             className="custom-input"
             // value={formData.date}
             // onChange={handleChange}
             required
           />
-        </label>
+        </div>
 
         {/* Number of dinners */}
-        <label>
-          Number of dinners:
+        <div className="form-group">
+          <label for="dinners">Dinners</label>
           <input
             type="number"
             name="dinners"
+            id="dinners"
             placeholder="Enter number"
             className="custom-input"
             min="1"
+            max="10"
             // value={formData.dinners}
             // onChange={handleChange}
             required
           />
-        </label>
+        </div>
 
         {/* Radio buttons for seating */}
-        <fieldset>
-          <legend>Seating option:</legend>
-          <label>
-            <input
-              type="radio"
-              name="seating"
-              value="indoor"
-              // checked={formData.seating === "indoor"}
-              // onChange={handleChange}
-            />
-            Indoor
-          </label>
-          <label>
-            <input
-              type="radio"
-              name="seating"
-              value="outdoor"
-              // checked={formData.seating === "outdoor"}
-              // onChange={handleChange}
-            />
-            Outdoor
-          </label>
-        </fieldset>
+        <div className="form-group-radio">
+          <legend>Seating option</legend>
+          <div className="radio">
+            <label for="indoor">
+              <input
+                type="radio"
+                name="seating"
+                value="indoor"
+                id="indoor"
+                // checked={formData.seating === "indoor"}
+                // onChange={handleChange}
+              />
+              Indoor
+            </label>
+            <label for="outdoor">
+              <input
+                type="radio"
+                name="seating"
+                value="outdoor"
+                id="outdoor"
+                // checked={formData.seating === "outdoor"}
+                // onChange={handleChange}
+              />
+              Outdoor
+            </label>
+          </div>
+        </div>
 
         <button type="submit">Let's go</button>
       </form>

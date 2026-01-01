@@ -11,6 +11,16 @@
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .reservation-content {
+    grid-template-columns: 1fr;
+  }
+  .reservation-right {
+    justify-self: center;
+    min-height: 500px;
+  }
+}
+
 .main-title-container {
   height: 60%;
   display: flex;
@@ -64,29 +74,86 @@
 }
 
 /*reservationInfo*/
+input,
+button,
+select,
+textarea,
+label {
+  font-family: "Karla", sans-serif;
+}
+
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="date"]::-webkit-datetime-edit-year-field {
+  color: transparent; /* hides the mm/dd/yyyy */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1; /* keeps the calendar icon visible */
+}
+
 .form-container {
-    background-color: #EDEFEE;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    justify-content: center;
-    padding: 0.75rem;
-    border-radius: 16px;
-    gap: 0.75rem;
+  background-color: #edefee;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+  padding: 0.75rem;
+  border-radius: 16px;
+  gap: 2rem;
 }
 
 .welcome-text {
-    display: grid;
+  display: grid;
 }
 
 .welcome-text h2,
 .welcome-text p {
-     margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .reservation-form {
-    display: grid;
-    gap: 0.5rem;
+  display: grid;
+  gap: 0.75rem;
 }
 
+.form-group {
+  display: grid;
+  accent-color: #495e57;
+  font-size: 1rem;
+}
 
+.form-group-radio {
+  gap: 0.5rem;
+}
+
+.radio {
+  display: flex;
+  gap: 2rem;
+  accent-color: #495e57;
+}
+
+input {
+  font-family: serif;
+  background-color: #e5e4e2;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.reservation-form button {
+  align-self: center;
+  background: #f4ce14;
+  color: #495e57;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reservation-form button:hover {
+  background: #333333;
+  color: #e5e4e2;
+}
