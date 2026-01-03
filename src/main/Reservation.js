@@ -2,15 +2,16 @@ import React from "react";
 import "./Reservation.css";
 import { Outlet } from "react-router-dom";
 import Back from "../assets/back.svg";
-import ReservationInfo from "./reservation/ReservationInfo";
+import { useNavigate } from "react-router-dom";
 
 function Reservation() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="reservation">
         <div className="reservation-content">
           <div className="reservation-left">
-            <button className="back-btn">
+            <button className="back-btn" onClick={() => navigate(-1)}>
               <img src={Back} alt="back icon" style={{ width: "20px" }} />
               Back
             </button>
