@@ -15,9 +15,12 @@
     grid-template-columns: 1fr;
   }
   .reservation-left {
+    height: 200px;
+    align-items: center;
     margin-top: 2rem;
   }
   .reservation-right {
+    min-height: 400px;
     justify-self: center;
     margin-bottom: 1rem;
   }
