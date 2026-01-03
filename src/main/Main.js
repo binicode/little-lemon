@@ -9,6 +9,7 @@ import Michael from "../assets/Michael.webp";
 import Darius from "../assets/Darius.webp";
 import MarioAdrianA from "../assets/Mario and Adrian a.webp";
 import MarioAdrianB from "../assets/Mario and Adrian b.webp";
+import { Link } from "react-router-dom";
 
 function Main() {
   return (
@@ -23,7 +24,9 @@ function Main() {
               Chicago. Fresh ingredients, bold flavors, and warm hospitality
               await you.
             </p>
-            <button className="reserve-btn">Reserve a Table</button>
+            <Link to="/reservation">
+              <button className="reserve-btn">Reserve a Table</button>
+            </Link>
           </div>
 
           <div className="hero-image">
