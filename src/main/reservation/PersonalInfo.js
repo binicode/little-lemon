@@ -38,7 +38,7 @@ export default function PersonalInfo() {
             />
           </div>
 
-          {/* Number of dinners */}
+          {/* Email */}
           <div className="form-group">
             <label for="email">Email</label>
             <input
@@ -53,7 +53,7 @@ export default function PersonalInfo() {
             />
           </div>
 
-          {/* Number of dinners */}
+          {/* Password */}
           <div className="form-group">
             <label for="password">Password</label>
             <input
