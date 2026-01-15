@@ -162,3 +162,32 @@ input {
   background: #333333;
   color: #e5e4e2;
 }
+
+/*credit card info*/
+.card-details {
+  max-width: fit-content;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.reservation-form .credit-card-icon {
+  height: 40px;
+  max-width: fit-content;
+  align-self: end;
+  background: #495e57;
+}
+
+/*prev-next*/
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+
