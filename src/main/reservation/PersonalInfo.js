@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function PersonalInfo({
   formData,
   handleChange,
-  pervStep,
+  prevStep,
   nextStep,
 }) {
   return (
@@ -37,9 +37,8 @@ export default function PersonalInfo({
             id="email"
             placeholder="Enter your email"
             className="custom-input"
-            // value={formData.personal.email}
-            // onChange={e =>
-            // handleChange("reservation", "personal", e.target.value)}
+            value={formData.personal.email}
+            onChange={(e) => handleChange("personal", "email", e.target.value)}
             required
           />
         </div>
@@ -53,17 +52,28 @@ export default function PersonalInfo({
             id="password"
             placeholder="Enter number"
             className="custom-input"
-            // value={formData.personal.password}
-            // onChange={e =>
-            // handleChange("personal", "password", e.target.value)}
+            value={formData.personal.password}
+            onChange={(e) =>
+              handleChange("personal", "password", e.target.value)
+            }
             required
           />
         </div>
-        <div>
-          <button type="button" onClick={pervStep}>
+        <div className="prev-next">
+          <button type="button" onClick={prevStep}>
             Back
           </button>
-          <button type="button" onClick={nextStep}>
+          <button
+            type="button"
+            onClick={(e) => {
+              const form = e.target.closest("form");
+              if (form.checkValidity()) {
+                nextStep();
+              } else {
+                form.reportValidity();
+              }
+            }}
+          >
             Reserve Table
           </button>
         </div>
