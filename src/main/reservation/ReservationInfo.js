@@ -7,11 +7,9 @@ function ReservationInfo({ formData, handleChange, nextStep }) {
         <h2>Welcome!</h2>
         <p>{`Let's save you the perfect spot.`}</p>
       </div>
-
       {/* Date field */}
       <div className="form-group">
         <label htmlFor="date">Date</label>
-
         <input
           type="date"
           name="date"
@@ -26,7 +24,7 @@ function ReservationInfo({ formData, handleChange, nextStep }) {
 
       {/* Number of dinners */}
       <div className="form-group">
-        <label for="diners">Diners</label>
+        <label htmlfor="diners">Diners</label>
         <input
           type="number"
           name="diners"
@@ -42,12 +40,11 @@ function ReservationInfo({ formData, handleChange, nextStep }) {
           required
         />
       </div>
-
       {/* Radio buttons for seating */}
       <div className="form-group-radio">
         <legend>Seating option</legend>
         <div className="radio">
-          <label for="indoor">
+          <label htmlfor="indoor">
             <input
               type="radio"
               name="seating"
@@ -60,7 +57,7 @@ function ReservationInfo({ formData, handleChange, nextStep }) {
             />
             Indoor
           </label>
-          <label for="outdoor">
+          <label htmlfor="outdoor">
             <input
               type="radio"
               name="seating"
@@ -75,8 +72,17 @@ function ReservationInfo({ formData, handleChange, nextStep }) {
           </label>
         </div>
       </div>
-
-      <button type="button" onClick={nextStep}>
+      <button
+        type="button"
+        onClick={(e) => {
+          const form = e.target.closest("form");
+          if (form.checkValidity()) {
+            nextStep();
+          } else {
+            form.reportValidity();
+          }
+        }}
+      >
         Let's go
       </button>
     </div>
