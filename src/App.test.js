@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("render Reserve a Table", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  screen.getByText("Reserve a Table");
+  expect("Reserve a Table").toBeInTheDocument();
+  userEvent.click(screen.getByRole("button", { name: /submit/i }));
+  expect(screen.getByText(/success/i)).toBeInTheDocument();
 });
