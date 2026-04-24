@@ -1,14 +1,14 @@
 import "./Main.css";
-import Hero from "../assets/hero.jpg";
-import Bruchetta from "../assets/bruchetta.svg";
-import GreekSalad from "../assets/greek salad.jpg";
-import LemonDessert from "../assets/lemon dessert.jpg";
-import John from "../assets/John.webp";
-import Hannah from "../assets/Hannah.webp";
-import Michael from "../assets/Michael.webp";
-import Darius from "../assets/Darius.webp";
-import MarioAdrianA from "../assets/Mario and Adrian a.webp";
-import MarioAdrianB from "../assets/Mario and Adrian b.webp";
+import Hero from "../../assets/hero.jpg";
+import Bruchetta from "../../assets/bruchetta.svg";
+import GreekSalad from "../../assets/greek salad.jpg";
+import LemonDessert from "../../assets/lemon dessert.jpg";
+import John from "../../assets/John.webp";
+import Hannah from "../../assets/Hannah.webp";
+import Michael from "../../assets/Michael.webp";
+import Darius from "../../assets/Darius.webp";
+import MarioAdrianA from "../../assets/Mario and Adrian a.webp";
+import MarioAdrianB from "../../assets/Mario and Adrian b.webp";
 import { Link } from "react-router-dom";
 
 function Main() {

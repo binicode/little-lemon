@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
-import Main from "./main/Main";
+import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
-import PaymentInfo from "./main/reservation/PaymentInfo";
-import ReservationInfo from "./main/reservation/ReservationInfo";
-import PersonalInfo from "./main/reservation/PersonalInfo";
-import Reservation from "./main/Reservation";
+import PaymentInfo from "./components/main/reservation/PaymentInfo";
+import ReservationInfo from "./components/main/reservation/ReservationInfo";
+import PersonalInfo from "./components/main/reservation/PersonalInfo";
+import Reservation from "./components/main/Reservation";
 
 function App() {
   return (

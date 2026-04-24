@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./Reservation.css";
-import Back from "../assets/back.svg";
+import Back from "../../assets/back.svg";
 import { useNavigate } from "react-router-dom";
 import ReservationInfo from "./reservation/ReservationInfo";
 import PersonalInfo from "./reservation/PersonalInfo";

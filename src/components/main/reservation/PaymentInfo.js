@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Reservation.css";
-import CreditCard from "../../assets/creditcard.svg";
+import CreditCard from "../../../assets/creditcard.svg";
 
 export default function PaymentInfo({
   formData,
