@@ -90,9 +90,7 @@ label {
 input[type="date"]::-webkit-datetime-edit-text,
 input[type="date"]::-webkit-datetime-edit-month-field,
 input[type="date"]::-webkit-datetime-edit-day-field,
-input[type="date"]::-webkit-datetime-edit-year-field {
-  color: transparent; /* hides the mm/dd/yyyy */
-}
+input[type="date"]::-webkit-datetime-edit-year-field
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 1; /* keeps the calendar icon visible */
