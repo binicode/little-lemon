@@ -65,13 +65,13 @@
 }
 
 .hero-image {
-  width: 70%;
+  width: 30%;
 }
 
 .hero-image img {
   width: 100%;
   height: auto;
-  border-radius: 16px; /* optional styling */
+  border-radius: 16px; 
 }
 
 /*specials section*/
