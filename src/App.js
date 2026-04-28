@@ -3,9 +3,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
-import PaymentInfo from "./components/main/reservation/PaymentInfo";
-import ReservationInfo from "./components/main/reservation/ReservationInfo";
-import PersonalInfo from "./components/main/reservation/PersonalInfo";
+import ReservationInfo from "./components/main/ReservationInfo";
 import Reservation from "./components/main/Reservation";
 
 function App() {

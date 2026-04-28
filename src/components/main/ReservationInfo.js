@@ -24,7 +24,7 @@ function ReservationInfo({ formData, handleChange, nextStep }) {
 
       {/* Number of dinners */}
       <div className="form-group">
-        <label htmlfor="diners">Diners</label>
+        <label htmlfor="diners">Number of guests</label>
         <input
           type="number"
           name="diners"
@@ -42,48 +42,48 @@ function ReservationInfo({ formData, handleChange, nextStep }) {
       </div>
       {/* Radio buttons for seating */}
       <div className="form-group-radio">
-        <legend>Seating option</legend>
+        <legend>Occasion</legend>
         <div className="radio">
-          <label htmlfor="indoor">
+          <label htmlfor="birthday">
             <input
               type="radio"
-              name="seating"
-              value="indoor"
-              id="indoor"
-              checked={formData.reservation.seating === "indoor"}
+              name="occasion"
+              value="birthday"
+              id="birthday"
+              checked={formData.reservation.seating === "birthday"}
               onChange={(e) =>
                 handleChange("reservation", "seating", e.target.value)
               }
             />
-            Indoor
+            Birthday
           </label>
-          <label htmlfor="outdoor">
+          <label htmlfor="anniversary">
             <input
               type="radio"
-              name="seating"
-              value="outdoor"
-              id="outdoor"
-              checked={formData.reservation.seating === "outdoor"}
+              name="occasion"
+              value="anniversary"
+              id="anniversary"
+              checked={formData.reservation.seating === "anniversary"}
               onChange={(e) =>
                 handleChange("reservation", "seating", e.target.value)
               }
             />
-            Outdoor
+            Anniversary
           </label>
         </div>
       </div>
       <button
         type="button"
-        onClick={(e) => {
+        /* onClick={(e) => {
           const form = e.target.closest("form");
           if (form.checkValidity()) {
             nextStep();
           } else {
             form.reportValidity();
           }
-        }}
+        }} */
       >
-        Let's go
+        Submit reservation
       </button>
     </div>
   );
