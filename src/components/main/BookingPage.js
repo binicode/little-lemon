@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./Reservation.css";
+import "./BookingPage.css";
 import Back from "../../assets/back.svg";
 import { useNavigate } from "react-router-dom";
 import ReservationInfo from "./BookingForm";
@@ -9,7 +9,7 @@ function Reservation() {
   const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
-    reservation: { date: "", diners: "", Occasion: "" }
+    reservation: { date: "", time: "", diners: "", Occasion: "" }
   });
 
   // Handle input changes
