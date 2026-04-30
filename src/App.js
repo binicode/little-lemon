@@ -3,8 +3,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
-import ReservationInfo from "./components/main/BookingForm";
-import Reservation from "./components/main/BookingPage";
+import BookingPage from "./components/main/BookingPage";
 
 function App() {
   return (
@@ -13,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="reservation" element={<Reservation />}></Route>
+          <Route path="reservation" element={<BookingPage />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
