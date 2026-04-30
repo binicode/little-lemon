@@ -51,7 +51,7 @@
 .reserve-btn {
   align-self: center;
   background: #f4ce14;
-  color: #333333;
+  color: #000000;
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -71,7 +71,7 @@
 .hero-image img {
   width: 100%;
   height: auto;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
 
 /*specials section*/
@@ -92,8 +92,8 @@
 
 .specials .menu-button {
   align-self: center;
-  background: #edefee;
-  color: #333333;
+  background: #f4ce14;
+  color: #000000;
   border: none;
   padding: 0.5rem 0.75rem;
   font-size: 0, 75rem;

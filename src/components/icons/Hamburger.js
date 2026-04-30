@@ -1,9 +1,9 @@
 import {ReactComponent as HamburgerIcon} from "../../assets/hamburger_menu_.svg"
 
-function Hamburger ({size = 32, color = "495E57", onclick}) {
+function Hamburger ({size = 32, color = "495E57", onClick}) {
     return (
         <button 
-          onclick={onclick}
+          onClick={onClick}
           style={{color}}
           className="hamburger-btn"
         >
