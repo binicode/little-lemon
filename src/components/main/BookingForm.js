@@ -4,7 +4,13 @@ import "./BookingForm.css";
 import Back from "../../assets/back.svg";
 import { useNavigate } from "react-router-dom";
 
-function BookingForm({ availableTimes, setAvailableTimes }) {
+function BookingForm({ availableTimes, dispatch }) {
+
+  const handleDateChange = (e) => {
+    setDate(e.target.value);
+    dispatch({ type: "UPDATE_TIMES", date: e.target.value }); // 👈 send date in the message
+  };
+
   const navigate = useNavigate();
 
   const [date, setDate] = useState("");
@@ -56,7 +62,7 @@ function BookingForm({ availableTimes, setAvailableTimes }) {
                     type="date"
                     id="date"
                     value={date}
-                    onChange={(e) => setDate(e.target.value)}
+                    onChange={handleDateChange}
                     required
                   />
                 </div>
