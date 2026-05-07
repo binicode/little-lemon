@@ -1,3 +1,4 @@
+/* global fetchAPI, submitAPI */
 import React, { useState } from "react";
 
 import "./BookingForm.css";
@@ -20,12 +21,12 @@ function BookingForm({ availableTimes, dispatch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log({
-      date,
-      time,
-      diners,
-      occasion
-    });
+    const result = submitAPI({ date, time, diners, occasion });
+    if (result) {
+      navigate("/confirmed");
+    } else {
+      alert("Failed to submit reservation. Please try again.");
+    }
   };
 
 

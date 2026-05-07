@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import BookingForm from "./components/main/BookingForm";
+import ConfirmedBooking from "./components/main/ConfirmedBooking";
 import { useReducer } from "react";
 
 export function initializeTimes() {
@@ -35,6 +36,7 @@ function App() {
             availableTimes={availableTimes}
             dispatch={dispatch}
            />} ></Route>
+           <Route path="confirmed" element={<ConfirmedBooking />} ></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
