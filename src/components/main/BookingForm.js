@@ -1,4 +1,4 @@
-/* global fetchAPI, submitAPI */
+/* global submitAPI */
 import React, { useState } from "react";
 
 import "./BookingForm.css";

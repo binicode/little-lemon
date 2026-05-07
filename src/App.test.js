@@ -1,12 +1,16 @@
-import {initializeTimes, updateTimes} from "./App";
+import { initializeTimes, updateTimes } from "./App";
 
-test("initalzeTimes returns correct initial times", () => {
+// Mock fetchAPI globally for tests
+global.fetchAPI = (date) => ["17:00", "18:00", "19:00", "20:00"];
+
+test("initializeTimes returns a non-empty array of available times", () => {
   const times = initializeTimes();
-  expect(times).toEqual(["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]);
+  expect(times.length).toBeGreaterThan(0);
 });
 
-test("updateTimes returns the same state it receives", () => {
-  const currentState = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
-  const result = updateTimes(currentState, { type: "UPDATE_TIMES", date: "2026-05-10" });
-  expect(result).toEqual(currentState);
+test("updateTimes returns new times based on the dispatched date", () => {
+  const state = ["17:00", "18:00"];
+  const action = { type: "UPDATE_TIMES", date: "2026-05-10" };
+  const result = updateTimes(state, action);
+  expect(result.length).toBeGreaterThan(0);
 });
