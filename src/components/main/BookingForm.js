@@ -6,11 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 function BookingForm({ availableTimes, dispatch }) {
 
-  const handleDateChange = (e) => {
-    setDate(e.target.value);
-    dispatch({ type: "UPDATE_TIMES", date: e.target.value }); // 👈 send date in the message
-  };
-
   const navigate = useNavigate();
 
   const [date, setDate] = useState("");
@@ -18,6 +13,10 @@ function BookingForm({ availableTimes, dispatch }) {
   const [diners, setDiners] = useState("");
   const [occasion, setOccasion] = useState("");
 
+  const handleDateChange = (e) => {
+    setDate(e.target.value);
+    dispatch({ type: "UPDATE_TIMES", date: e.target.value }); // 👈 send date in the message
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
