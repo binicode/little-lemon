@@ -29,6 +29,17 @@ function BookingForm({ availableTimes, dispatch }) {
     }
   };
 
+  const isFormValid = () => {
+  return (
+    date &&
+    time &&
+    diners >= 1 &&
+    diners <= 10 &&
+    occasion
+  );
+};
+
+
 
   return (
     <>
@@ -64,6 +75,7 @@ function BookingForm({ availableTimes, dispatch }) {
                     value={date}
                     onChange={handleDateChange}
                     required
+                    min={new Date().toISOString().split("T")[0]} // prevents past dates
                   />
                 </div>
 
@@ -112,6 +124,7 @@ function BookingForm({ availableTimes, dispatch }) {
                       value="birthday"
                       checked={occasion === "birthday"}
                       onChange={(e) => setOccasion(e.target.value)}
+                      required
                     />
                     Birthday
                   </label>
@@ -122,12 +135,15 @@ function BookingForm({ availableTimes, dispatch }) {
                       value="anniversary"
                       checked={occasion === "anniversary"}
                       onChange={(e) => setOccasion(e.target.value)}
+                      required
                     />
                     Anniversary
                   </label>
                 </div>
 
-                <button type="submit">Submit reservation</button>
+                <button type="submit" disabled={!isFormValid}>
+                  Submit reservation
+                </button>
               </div>
             </form>
           </div>
