@@ -83,6 +83,39 @@
   margin: 0; /* remove fixed margins */
 }
 
+/* Mobile hero layout: split 50/50 */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: row;       /* keep side-by-side */
+    align-items: flex-start;
+  }
+
+  .hero-text {
+    flex: 1;
+    width: 50vw;               /* half viewport width */
+    max-width: 50vw;
+  }
+
+  .hero-image {
+    position: static;          /* remove absolute positioning */
+    flex: 1;
+    width: 50vw;               /* half viewport width */
+    max-width: 50vw;
+    margin: 0;                 /* no extra spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 100%;               /* fill container */
+    height: auto;              /* keep aspect ratio */
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+
+
 /*specials section*/
 .specials {
   padding-top: 2rem;
