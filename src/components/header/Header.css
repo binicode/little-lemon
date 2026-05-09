@@ -6,6 +6,7 @@
   background-color: #ffffff; /* optional background */
   border-bottom: 1px solid #ddd; /* subtle divider */
   gap: 1rem;
+  z-index: 10; /* ensure header is above other content */
 }
 
 .logo {
@@ -50,6 +51,18 @@ header nav a:hover {
 @media (max-width: 768px) {
   .nav ul {
     display: none;
+    flex-direction: column; /* stack links vertically */
+    background-color: #fff;
+    position: absolute;
+    top: 70px; /* below header */
+    right: 5%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .nav.active ul {
+    display: flex; /* show menu when active */
   }
 
   .hamburger-btn {

@@ -1,12 +1,15 @@
+import { useState } from "react";
 import Hamburger from "../icons/Hamburger";
 import Logo from "../../assets/Logo.svg";
 import "./Header.css";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   return (
     <header className="header">
       <img src={Logo} alt="Little Lemon logo" className="logo" />
-      <nav className="nav">
+      <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
         <ul>
           <li>
             <a href="/">Home</a>
@@ -28,7 +31,9 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <Hamburger size={32} />
+      <Hamburger size={32} 
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      />
     </header>
   );
 }

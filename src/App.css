@@ -1,3 +1,6 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Karla:wght@400&display=swap");
+
 .app {
   display: grid;
   min-height: 100vh;
@@ -5,8 +8,8 @@
   grid-template-rows: auto 1fr auto;
 }
 
-/* 1. Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Karla:wght@400&display=swap");
+
+
 
 /* 2. Headline styles */
 h1,
