@@ -157,6 +157,10 @@
   color: #ee9972;
 }
 
+.card-description {
+  color: #495e57;
+}
+
 .card-description,
 .testimonial-comment {
   align-self: flex-end;
@@ -266,6 +270,7 @@
 }
 
 .chicago-branch .branch-description {
+  color: #495E57;
   font-size: 1rem;
   margin: 0 0.75rem;
   max-width: 65ch; /* limit width to ~65 characters */

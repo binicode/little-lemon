@@ -24,6 +24,7 @@
 }
 
 .footer-column p {
+    color: #495e57;
     align-self: flex-end;
     font-size: 0.67rem;
     margin: 2rem 0.75rem;
