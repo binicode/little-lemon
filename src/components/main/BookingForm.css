@@ -161,6 +161,13 @@ input {
   color: #e5e4e2;
 }
 
+.reservation-form button:disabled {
+  background: #ccc;        /* gray background */
+  color: #666;             /* muted text */
+  cursor: not-allowed;     /* show "blocked" cursor */
+  opacity: 0.7;            /* slightly faded */
+}
+
 /*credit card info*/
 .card-details {
   max-width: fit-content;

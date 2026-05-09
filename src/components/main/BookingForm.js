@@ -31,11 +31,11 @@ function BookingForm({ availableTimes, dispatch }) {
 
   const isFormValid = () => {
   return (
-    date &&
-    time &&
-    diners >= 1 &&
-    diners <= 10 &&
-    occasion
+    date !== "" &&
+    time !== "" &&
+    Number(diners) >= 1 &&
+    Number(diners) <= 10 &&
+    occasion !== ""
   );
 };
 
@@ -109,7 +109,7 @@ function BookingForm({ availableTimes, dispatch }) {
                     min="1"
                     max="10"
                     value={diners}
-                    onChange={(e) => setDiners(e.target.value)}
+                    onChange={(e) => setDiners(Number(e.target.value) )}
                     required
                   />
                 </div>
@@ -141,7 +141,8 @@ function BookingForm({ availableTimes, dispatch }) {
                   </label>
                 </div>
 
-                <button type="submit" disabled={!isFormValid}>
+                <button 
+                type="submit" disabled={!isFormValid()}>
                   Submit reservation
                 </button>
               </div>
