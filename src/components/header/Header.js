@@ -5,12 +5,12 @@ import "./Header.css";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   return (
     <header className="header">
       <img src={Logo} alt="Little Lemon logo" className="logo" />
-      <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
-        <ul>
+      <nav className={`nav ${isMenuOpen ? "active" : ""}`} aria-label="Primary navigation">
+        <ul id="primary-navigation">
           <li>
             <a href="/">Home</a>
           </li>
@@ -31,8 +31,12 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <Hamburger size={32} 
+      <Hamburger
+        size={32}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Toggle navigation menu"
+        aria-expanded={isMenuOpen}
+        aria-controls="primary-navigation"
       />
     </header>
   );

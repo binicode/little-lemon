@@ -30,14 +30,14 @@ function BookingForm({ availableTimes, dispatch }) {
   };
 
   const isFormValid = () => {
-  return (
-    date !== "" &&
-    time !== "" &&
-    Number(diners) >= 1 &&
-    Number(diners) <= 10 &&
-    occasion !== ""
-  );
-};
+    return (
+      date !== "" &&
+      time !== "" &&
+      Number(diners) >= 1 &&
+      Number(diners) <= 10 &&
+      occasion !== ""
+    );
+  };
 
 
 
@@ -46,7 +46,9 @@ function BookingForm({ availableTimes, dispatch }) {
       <section className="reservation">
         <div className="reservation-content">
           <div className="reservation-left">
-            <button className="back-btn" onClick={() => navigate("/")}>
+            <button className="back-btn"
+              onClick={() => navigate("/")}
+              aria-label="Go back to home">
               <img src={Back} alt="back icon" style={{ width: "20px" }} />
               Home
             </button>
@@ -59,7 +61,10 @@ function BookingForm({ availableTimes, dispatch }) {
           </div>
 
           <div className="reservation-right">
-            <form className="reservation-form" onSubmit={handleSubmit}>
+            <form
+              className="reservation-form"
+              onSubmit={handleSubmit}
+              aria-label="Reservation form">
               <div className="form-container">
                 <div className="welcome-text">
                   <h2>Welcome!</h2>
@@ -109,13 +114,13 @@ function BookingForm({ availableTimes, dispatch }) {
                     min="1"
                     max="10"
                     value={diners}
-                    onChange={(e) => setDiners(Number(e.target.value) )}
+                    onChange={(e) => setDiners(Number(e.target.value))}
                     required
                   />
                 </div>
 
                 {/* Occasion */}
-                <div className="form-group-radio">
+                <fieldset className="form-group-radio" role="radiogroup" aria-label="Select occasion">
                   <legend>Occasion</legend>
                   <label>
                     <input
@@ -139,10 +144,12 @@ function BookingForm({ availableTimes, dispatch }) {
                     />
                     Anniversary
                   </label>
-                </div>
+                </fieldset>
 
-                <button 
-                type="submit" disabled={!isFormValid()}>
+                <button
+                  type="submit" disabled={!isFormValid()}
+                  aria-label="Submit reservation"
+                >
                   Submit reservation
                 </button>
               </div>
