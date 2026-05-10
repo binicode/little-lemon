@@ -7,7 +7,7 @@ function ConfirmedBooking() {
   const navigate = useNavigate();
 
   return (
-    <section className="confirmed-booking" aria-label="Booking confirmation">
+    <section className="confirmed-booking" aria-label="Booking confirmation" id="reservation">
       <h1>
         Booking Confirmed!{" "}
         <span role="img" aria-label="Celebration">

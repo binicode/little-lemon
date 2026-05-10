@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 function Main() {
   return (
     <main className="main">
-      <section className="hero">
+      <section className="hero" id="home">
         <div className="hero-content">
           <div className="hero-text">
             <h1>Little Lemon</h1>
@@ -35,7 +35,7 @@ function Main() {
         </div>
       </section>
 
-      <section className="specials">
+      <section className="specials" id="menu">
         <div className="specials-content">
           {/* First row: Title on the left, Button on the right*/}
           <div className="specials-header">
@@ -87,7 +87,7 @@ function Main() {
         </div>
       </section>
 
-      <section className="testimonials">
+      <section className="testimonials" id="testimonials">
         <div className="testimonials-content">
           {/* Title centered */}
           <h2 className="testimonials-title">Testimonials</h2>
@@ -152,7 +152,7 @@ function Main() {
         </div>
       </section>
 
-      <section className="chicago-branch">
+      <section className="chicago-branch" id="about">
         <div className="container">
           <div className="chicago-grid">
             {/* Left column: text content */}

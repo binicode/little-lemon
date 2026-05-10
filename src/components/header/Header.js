@@ -15,19 +15,19 @@ function Header() {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/">Menu</a>
+            <a href="#menu">Menu</a>
           </li>
           <li>
             <a href="/reservation">Reservations</a>
           </li>
           <li>
-            <a href="/">Order online</a>
+            <a href="#menu">Order online</a>
           </li>
           <li>
-            <a href="/">Login</a>
+            <a href="/reservation">Login</a>
           </li>
         </ul>
       </nav>
