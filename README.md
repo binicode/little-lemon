@@ -1,70 +1,230 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant - Booking Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React web application for the Little Lemon restaurant that allows customers to browse the menu and make table reservations. This project is built as part of the Meta Frontend Development course.
 
-## Available Scripts
+## 🍋 Project Overview
 
-In the project directory, you can run:
+Little Lemon is a restaurant booking and dining web application featuring:
+- **Restaurant Landing Page** with hero section and restaurant information
+- **Table Reservation System** with form validation and booking confirmation
+- **Responsive Design** optimized for mobile and desktop
+- **Testimonials Section** showcasing customer reviews
+- **Team Information** featuring restaurant staff
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/binicode/little-lemon.git
+cd little-lemon
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📁 Project Structure
+
+```
+little-lemon/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── assets (icons and social media preview)
+├── src/
+│   ├── components/
+│   │   ├── header/
+│   │   │   ├── Header.js
+│   │   │   └── Header.css
+│   │   ├── footer/
+│   │   │   ├── Footer.js
+│   │   │   └── Footer.css
+│   │   ├── main/
+│   │   │   ├── Main.js (Landing page)
+│   │   │   ├── Main.css
+│   │   │   ├── BookingForm.js (Reservation form)
+│   │   │   ├── BookingForm.css
+│   │   │   ├── BookingForm.test.js
+│   │   │   ├── Reservation.js (Booking page)
+│   │   │   ├── Reservation.css
+│   │   │   ├── ConfirmedBooking.js (Confirmation page)
+│   │   │   └── ConfirmedBooking.css
+│   │   └── icons/
+│   │       └── Hamburger.js (Mobile menu icon)
+│   ├── assets/
+│   │   ├── images/ (Restaurant and menu images)
+│   │   └── icons/ (SVG and custom icons)
+│   ├── App.js
+│   ├── App.css
+│   ├── App.test.js
+│   ├── index.js
+│   ├── index.css
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── package.json
+└── README.md
+```
+
+## 📦 Available Scripts
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload when you make changes.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode. Tests include form validation and component functionality.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production in the `build` folder. It correctly bundles React and optimizes for the best performance.
 
 ### `npm run eject`
+**Note: this is a one-way operation!** If you need full control over the configuration, you can eject at any time. This exposes all the configuration files and dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🎯 Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Landing Page
+- Eye-catching hero section with call-to-action
+- Restaurant description and highlights
+- Specials menu showcase
+- Customer testimonials
+- Team member profiles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Booking System
+- Easy-to-use reservation form
+- Date and time selection
+- Party size selection
+- Customer information collection
+- Form validation with error handling
+- Booking confirmation page
+- Reservation summary display
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Responsive Design
+- Mobile-first approach
+- Hamburger menu for mobile navigation
+- Optimized layouts for all screen sizes
+- Touch-friendly interface
 
-## Learn More
+## 🛠️ Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React** 19.2.0 - UI library
+- **React Router DOM** 6.30.3 - Client-side routing
+- **CSS3** - Styling and responsive design
+- **Jest & React Testing Library** - Unit and component testing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧪 Testing
 
-### Code Splitting
+The project includes comprehensive tests for the booking form functionality:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm test
+```
 
-### Analyzing the Bundle Size
+Tests cover:
+- Form validation
+- Input handling
+- Button interactions
+- Component rendering
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📱 Components Overview
 
-### Making a Progressive Web App
+### Header
+Navigation component with logo and menu links. Includes responsive hamburger menu for mobile devices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Main
+Landing page displaying restaurant information, specials, testimonials, and team members.
 
-### Advanced Configuration
+### BookingForm
+Form component for customers to make reservations. Includes:
+- Date picker
+- Time selection
+- Party size input
+- Name, email, and phone fields
+- Form validation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Reservation
+Full booking page layout with the booking form.
 
-### Deployment
+### ConfirmedBooking
+Confirmation page displayed after successful booking.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Footer
+Footer section with restaurant information, links, and contact details.
 
-### `npm run build` fails to minify
+## 🎨 Assets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project includes:
+- High-quality restaurant and dish images
+- SVG icons for UI elements
+- Team member photos (Darius, Hannah, John, Michael)
+- Hero and background images
+
+## 📝 Available Assets
+
+- `Logo.svg` - Restaurant logo
+- `hero.jpg` - Hero section background
+- `greek salad.jpg`, `lemon dessert.jpg`, `bruchetta.svg` - Menu items
+- `Dish icon.svg`, `home icon.svg`, `basket.svg` - UI icons
+- Team member photos in WebP format
+
+## 🚀 Deployment
+
+The app can be deployed to various platforms:
+- GitHub Pages
+- Vercel
+- Netlify
+- Any static hosting service
+
+Build the production bundle:
+```bash
+npm run build
+```
+
+## 📚 Course Information
+
+This project is developed as part of the **Meta Frontend Development Course**, specifically the final capstone project focusing on:
+- React best practices
+- Component composition
+- State management
+- Form handling and validation
+- Responsive web design
+- Testing and debugging
+
+## 🔗 Resources
+
+- [React Documentation](https://reactjs.org/)
+- [Create React App Docs](https://facebook.github.io/create-react-app/)
+- [React Router Documentation](https://reactrouter.com/)
+
+## 👨‍💻 Author
+
+**binicode** - [GitHub Profile](https://github.com/binicode)
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repository and submit pull requests with improvements.
+
+## 📞 Support
+
+For issues or questions about this project, please create an issue on the [GitHub repository](https://github.com/binicode/little-lemon/issues).
+
+---
+
+**Enjoy exploring Little Lemon! 🍋**
